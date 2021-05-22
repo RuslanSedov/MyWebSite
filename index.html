@@ -8,6 +8,9 @@
     <meta name="author" content="Ruslan Sedov">
     <meta name="description" content="Личный сайт: обо мне, моих профессиональных навыках и личных качествах." />
     <meta name="keywords" content="Sedov Ruslan, Sedov, Седов Руслан, frontend Седов" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Ruslan Sedov</title>
 </head>
@@ -15,8 +18,9 @@
 <body>
     <header class="header">
         <div class="header__title">
-
+            Руслан Седов
         </div>
+        <div class="header__margin"></div>
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
@@ -27,16 +31,37 @@
     </header>
     <main class="main">
         <section class="preview">
-            <figure></figure>
+            <figure class="preview__photo">
+                <img src="css/img/ava.png" alt="Аватара нет?!">
+            </figure>
             <h1>Руслан Седов</h1>
             <div class="preview__text">
                 Front-end web developer
             </div>
         </section>
-        <div class="">
-            <section class="aboutMe"></section>
-            <aside class="contacts">
+        <div class="main__content">
+            <section class="aboutMe">
+                <h2>Обо мне</h2>
+                <p>Окончил среднюю школу (в Подмосковье) с золотой медалью. После 11 класса поступил в Московский
+                    Финансово-Промышленный Университет на факультет Информационных систем (направление: разработка
+                    интернет-приложений).</p>
 
+
+            </section>
+            <aside class="contacts">
+                <h2>Контакты:</h2>
+                <div class="contacts__item">
+                    <a href="https://github.com/RuslanSedov" target="_blank" .><img
+                            src="css/img/icons/social-041-round_github.png" alt="GitHub" title="RuslanSedov"></a>
+                </div>
+                <div class="contacts__item">
+                    <a href="https://twitter.com/sedov_ruslan" target="_blank"><img
+                            src="css/img/icons/social-003-round_twitter.png" alt="Twitter" title="@sedov_ruslan"></a>
+                </div>
+                <div class="contacts__item">
+                    <a href="https://www.facebook.com/ruslan.sedov.9889" target="_blank"><img
+                            src="css/img/icons/social-006-round_facebook.png" alt="FaceBook"></a>
+                </div>
             </aside>
         </div>
 

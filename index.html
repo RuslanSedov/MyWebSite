@@ -8,6 +8,7 @@
     <meta name="author" content="Ruslan Sedov">
     <meta name="description" content="Личный сайт: обо мне, моих профессиональных навыках и личных качествах." />
     <meta name="keywords" content="Sedov Ruslan, Sedov, Седов Руслан, frontend Седов" />
+    <link rel="shortcut icon" href="css/img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap"
         rel="stylesheet">
@@ -18,16 +19,19 @@
 <body>
     <header class="header">
         <div class="header__title">
-            Руслан Седов
+            <a href="index.html">Руслан Седов</a>
         </div>
         <div class="header__margin"></div>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">План развития</a></li>
-            </ul>
-        </nav>
+        <div class="menu__adaptive">
+            <nav class="menu">
+                <button class="menu__button" id="list-button">&#9776;</button>
+                <ul class="menu__list .menu__list-hidden" id="main-list">
+                    <li class="menu__item"><a href="#" class="menu__link">Статьи</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">План развития</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main">
         <section class="preview">
@@ -45,7 +49,10 @@
                 <p>Окончил среднюю школу (в Подмосковье) с золотой медалью. После 11 класса поступил в Московский
                     Финансово-Промышленный Университет на факультет Информационных систем (направление: разработка
                     интернет-приложений).</p>
-
+                <p>
+                    Уже больше года активно изучаю веб-разработку. В частности -
+                    выбрал путь развития frontend разработчиком.
+                </p>
 
             </section>
             <aside class="contacts">

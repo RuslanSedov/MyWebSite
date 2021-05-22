@@ -32,6 +32,11 @@ body {
   text-align: center;
   white-space: nowrap;
 }
+.header__title a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
 .header__title:hover {
   background-color: #d6ebff;
   color: rgb(86, 129, 222);
@@ -43,13 +48,19 @@ body {
 .menu {
   flex: 4;
 }
-
+.menu__button {
+  display: none;
+}
 .menu__list {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: flex-end;
   list-style-type: none;
-  align-items: center;
+}
+
+.menu__list-hidden {
+  display: flex;
 }
 
 .menu__item {
@@ -71,7 +82,6 @@ body {
 
 .preview {
   background-color: #deefff;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,6 +114,7 @@ body {
   max-width: 650px;
   margin: auto;
   display: flex;
+  padding-bottom: 2em;
 }
 .aboutMe {
   flex: 3;
@@ -115,6 +126,46 @@ body {
 .contacts {
   flex: 1;
 }
+.contacts__item img {
+  width: 64px;
+  height: 64px;
+}
 .contacts__item:not(:last-child) {
   padding-bottom: 2em;
+}
+
+@media (max-width: 650px) {
+  .header {
+    display: block;
+  }
+  .menu__button {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+  }
+  .menu__list {
+    height: max-content;
+    margin-top: -0.1em;
+    padding-left: 0;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+  }
+  .main__content {
+    padding: 1em 1.5em;
+    flex-direction: column;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__list-hidden {
+    opacity: 0;
+  }
 }

@@ -12,4 +12,4 @@ https://ruslansedov.github.io/MyWebSite/index.html
 
 The site is about me. It will contain a brief autobiography, my skills, my goals in life and achievements.
 
-The Sai consists of one page. The content is divided into semantic sections. Quick access to any of the sections is available thanks to anchor links. When developing the site, I was guided by the BEM methodology.
+The site consists of one page. The content is divided into semantic sections. Quick access to any of the sections is available thanks to anchor links. When developing the site, I was guided by the BEM methodology.

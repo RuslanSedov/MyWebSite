@@ -13,6 +13,7 @@
 body {
   margin: 0;
 }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -81,20 +82,29 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-
+.main a {
+  text-decoration: none;
+}
+.black {
+  color: black;
+}
+.main p a {
+  color: rgb(86, 129, 222);
+  font-weight: bold;
+}
 .preview {
   background-color: #deefff;
   /* background-color: #b8d1ff; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   padding-top: 1em;
 }
 
 .preview__photo {
-  height: 180px;
-  max-height: 180px;
+  height: 140px;
+  max-height: 140px;
   margin-bottom: 0;
 }
 .preview__photo img {
@@ -102,13 +112,13 @@ body {
   width: auto;
 }
 .preview h1 {
+  margin: 0;
   margin-top: 0.125em;
-  margin-bottom: 0.125em;
-  font-size: 54px;
+  font-size: 48px;
   /* font-weight: 300; */
 }
 .preview__text {
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 1.5em;
   font-weight: 500;
 }
@@ -124,12 +134,34 @@ body {
   padding-right: 2em;
 }
 .main__content p,
-.projects p {
-  font-size: 24px;
+.projects p,
+.myWay p {
+  font-size: 20px;
 }
-.projects {
+.projects,
+.myWay {
   max-width: 650px;
   margin: auto;
+  padding-bottom: 2em;
+}
+.projects p a img,
+.myWay p a img {
+  width: 32px;
+  height: 32px;
+}
+.projects__flex,
+.myWay__flex {
+  display: flex;
+  align-items: center;
+}
+
+.myWay__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.myWay__container p {
+  width: 25%;
 }
 .contacts {
   flex: 1;
@@ -206,7 +238,8 @@ body {
     padding: 1em 1.5em;
     flex-direction: column;
   }
-  .projects {
+  .projects,
+  .myWay {
     padding: 1em 1.5em;
   }
   .contacts {

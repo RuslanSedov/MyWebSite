@@ -16,7 +16,7 @@
     <title>Страница Руслана Седова</title>
 </head>
 
-<body>
+<body class="body-open">
     <header class="header">
         <div class="header__title">
             <a href="index.html">Руслан Седов</a>
@@ -29,12 +29,14 @@
                 <ul class="menu__list menu__list-close" id="main-list">
                     <li class="menu__item"><a href="#aboutMe" class="menu__link">Обо мне</a></li>
                     <li class="menu__item"><a href="#projects" class="menu__link">Проекты</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">План развития</a></li>
+                    <li class="menu__item"><a href="#myWay" class="menu__link">План развития</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <main class="main">
+
         <section class="preview">
             <figure class="preview__photo">
                 <img src="css/img/ava.png" alt="Аватара нет?!">
@@ -46,7 +48,8 @@
         </section>
         <div class="main__content">
             <section class="aboutMe">
-                <h2><a name="aboutMe">Обо мне</a></h2>
+                <a name="aboutMe"></a>
+                <h2 class="black" style="padding-top: 20px;">Обо мне</h2>
                 <p>Окончил среднюю школу (в Подмосковье) с золотой медалью. После 11 класса поступил в Московский
                     Финансово-Промышленный Университет на факультет Информационных систем (направление: разработка
                     интернет-приложений).</p>
@@ -61,7 +64,7 @@
 
             </section>
             <aside class="contacts">
-                <h2>Контакты:</h2>
+                <h2 style="padding-top: 20px;">Контакты:</h2>
                 <div class="contacts__item">
                     <a href="https://github.com/RuslanSedov" target="_blank" .><img
                             src="css/img/icons/social-041-round_github.png" alt="GitHub" title="RuslanSedov"></a>
@@ -90,38 +93,137 @@
                     сотрудничества. Он воплощает наши самые глубокие надежды на прогресс человечества. Он
                     предоставляет новые возможности для обучения, взаимопонимания и решения глобальных проблем.</i>
             </p>
+
             <p>Я полностью поддерживаю данную идею корпорации. За интернет-технологиями - великое будущее. Осознав
                 когда-то все это, я поставил
-                себе цель внести ценный вклад в развитие данной идеи.</p>
-            <h1><a name="projects">Мои проекты</a></h1>
-            <h2>1. Сайт о Марке Твене.</h2>
-            <p><a href="https://ruslansedov.github.io/MarkTwain/index.html" target="_blank">Ссылка на сайт.</a></p>
-            <p><a href="https://github.com/RuslanSedov/MarkTwain"> Ссылка на GitHub репозиторий.</a></p>
+                себе цель внести ценный вклад в развитие данной идеи. <a name="projects"></a></p>
+
+            <h2 class="black">Мои проекты</h2>
+            <h3>Сайт о Марке Твене.</h3>
+
             <p>Этот сайт посвящен одному из величайших писателей в истории - знаменитому Марку Твену. Я создаю этот
                 сайт, так как считаю, что в российском сегменте интернета нет достойного и удобного сайта о жизни и
                 творчестве столь недооцененного писателя.</p>
             <p> При разработке использовал чистый HTML5, CSS и немного JavaScript. HTML написан согласно методологии
                 БЭМ. При создании адаптивности сайта я применил подход Mobile-first.</p>
-            <h2>2. КиноМонстр</h2>
-            <p><a href="https://ruslansedov.github.io/KinoMonster/index.html" target="_blank">Ссылка на сайт</a></p>
+            <p><a href="https://ruslansedov.github.io/MarkTwain/index.html" target="_blank"
+                    title="Сайт о Марке Твене">Ссылка на сайт.</a></p>
+            <p class="projects__flex"><a href="https://github.com/RuslanSedov/MarkTwain" title="Сайт о Марке Твене"
+                    target="_blank"><img src="css/img/icons/social-041_github.png" alt=""></a><a
+                    href="https://github.com/RuslanSedov/MarkTwain" title="Сайт о Марке Твене" target="_blank">Ссылка на
+                    GitHub
+                    репозиторий.</a></p>
+            <h3>КиноМонстр</h3>
+
             <p>Данный сайт создавался во время прохождения курса. За время написания данного сайта я подчерпнул
                 немало важного опыта. Идея сайта - портал о кино, где можно посмотреть трейлер кинофильма, почитать
                 рецензию и отзывы о нем.</p>
-            <h2>3. ToDo на Vue</h2>
-            <p><a href="https://ruslansedov.github.io/Vue.jsFirstApp/Todo/index_app.html">Ссылка на сайт</a></p>
+            <p><a href="https://ruslansedov.github.io/KinoMonster/index.html" target="_blank"
+                    title="Сайт Киномонстр">Ссылка на сайт.</a></p>
+            <p class="projects__flex"><a href="https://github.com/RuslanSedov/RuslanSedov.github.io" target="_blank"
+                    title="Сайт Киномонстр"><img src="css/img/icons/social-041_github.png" alt=""></a><a
+                    href="https://github.com/RuslanSedov/RuslanSedov.github.io" target="_blank"
+                    title="Сайт Киномонстр">Ссылка на GitHub репозиторий.</a></p>
+            <h3>ToDo на Vue</h3>
+
             <p>Когда-то я попробывал изучать Vue.js - создал ToDo приложение с возможностью добавления, редактирования и
                 удаления задач. Позже же я начал изучать React - он показался мне более перспективным и удобным, нежели
                 Vue.</p>
-            <h2>4. Калькулятор</h2>
-            <p><a href="https://ruslansedov.github.io/Calc/index.html" target="_blank">Ссылка на сайт</a></p>
+            <p><a href="https://ruslansedov.github.io/Vue.jsFirstApp/Todo/index_app.html" target="_blank"
+                    title="ToDo на Vue">Ссылка на сайт.</a></p>
+            <p class="projects__flex"><a href="https://github.com/RuslanSedov/Vue.jsFirstApp" target="_blank"
+                    title="ToDo на Vue"><img src="css/img/icons/social-041_github.png" alt=""></a><a
+                    href="https://github.com/RuslanSedov/Vue.jsFirstApp" target="_blank" title="ToDo на Vue">Ссылка на
+                    GitHub репозиторий.</a></p>
+            <h3>Калькулятор</h3>
+
             <p>Простой калькулятор с адаптивным дизайном. Без лишних слов.</p>
+            <p><a href="https://ruslansedov.github.io/Calc/index.html" target="_blank" title="Калькулятор">Ссылка на
+                    сайт.</a></p>
+            <p class="projects__flex"><a href="https://github.com/RuslanSedov/Calc" target="_blank"
+                    title="Калькулятор"><img src="css/img/icons/social-041_github.png" alt=""></a><a
+                    href="https://github.com/RuslanSedov/Calc" target="_blank" title="Калькулятор">Ссылка на GitHub
+                    репозиторий.</a></p>
             <p>Так же периодически выполняю задачи по JavaScript на CodeWars. <a
-                    href="https://www.codewars.com/users/RuslanSedov">Вот ссылка на мой профиль</a></p>
+                    href="https://www.codewars.com/users/RuslanSedov" target="_blank" title="Профиль на CodeWars">Вот
+                    ссылка на мой профиль.</a><a name="myWay"></a></p>
 
 
         </section>
-        <section class="">
+        <section class="myWay">
 
+            <h2>План Развития</h2>
+            <p>На данный момент я уверенно на базовом уровне владею следущими технологиями:</p>
+            <div class="myWay__container">
+                <p class="myWay__flex">
+                    <a href="https://developer.mozilla.org/ru/docs/Web/Guide/HTML/HTML5"><img
+                            src="css/img/Web/HTML5.png" alt=""></a>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/Guide/HTML/HTML5">HTML</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS"><img src="css/img/Web/CSS3.png" alt=""></a>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/CSS">CSS</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://sass-lang.com/"><img src="css/img/Web/Sass.png" alt=""></a>
+                    <a href="https://sass-lang.com/">Sass</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript"><img src="css/img/Web/JS.png"
+                            alt=""></a>
+                    <a href="https://developer.mozilla.org/ru/docs/Web/JavaScript">JS</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://reactjs.org/"><img src="css/img/Web/React.png" alt=""
+                            style="width: 48px; height: 48px;"></a>
+                    <a href="https://reactjs.org/">React</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://docs.microsoft.com/ru-ru/contribute/markdown-reference"><img
+                            src="css/img/Web/markdown.png" alt=""></a>
+                    <a href="https://docs.microsoft.com/ru-ru/contribute/markdown-reference">Markdown</a>
+                </p>
+
+                <p class="myWay__flex">
+                    <a href="https://git-scm.com/"><img src="css/img/Web/git.png" alt=""></a>
+                    <a href="https://git-scm.com/">Git</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://www.figma.com/"><img src="css/img/Web/figma.png" alt=""></a>
+                    <a href="https://www.figma.com/">Figma</a>
+                </p>
+            </div>
+            <p>На данный момент я углубленно изучаю <a href="https://ru.reactjs.org/">React.js</a>, дабы создавать
+                сложные веб-интерфейсы, основанные на
+                независимых и расширяемых React-компонентах. В перспективе планирую углубленно изучать следующие
+                технологии:
+            </p>
+            <div class="myWay__container">
+                <p class="myWay__flex">
+                    <a href="https://redux.js.org/"><img src="css/img/Web/Redux.png" alt=""></a>
+                    <a href="https://redux.js.org/">Redux</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://www.typescriptlang.org/"><img src="css/img/Web/TypeScript.svg" alt=""></a>
+                    <a href="https://www.typescriptlang.org/">TypeScript</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://webpack.js.org/"><img src="css/img/Web/webpack.png" alt=""></a>
+                    <a href="https://webpack.js.org/">WebPack</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://gulpjs.com/"><img src="css/img/Web/gulp.png" alt=""></a>
+                    <a href="https://gulpjs.com/">Gulp</a>
+                </p>
+                <p class="myWay__flex">
+                    <a href="https://www.apollographql.com/"><img src="css/img/Web/GraphQL.png" alt=""></a>
+                    <a href="https://www.apollographql.com/">Apollo GraphQL</a>
+                </p>
+            </div>
+            <p>Я не утверждаю, что это конечный план развития. Мир технологий меняется со стремительной скоростью: что
+                вчера было актуально - сегодня уже устаревает. Однако, как я уже упомянул выше, моей целью является
+                становление экспертом в области разработки веб-интерфейсов. Независимо от изменений в мире IT, я буду
+                следовать ей, и через несколько лет - добьюсь ее.</p>
         </section>
 
     </main>

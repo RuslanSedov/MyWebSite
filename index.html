@@ -24,10 +24,11 @@
         <div class="header__margin"></div>
         <div class="menu__adaptive">
             <nav class="menu">
-                <button class="menu__button" id="list-button">&#9776;</button>
-                <ul class="menu__list menu__list-hidden" id="main-list">
-                    <li class="menu__item"><a href="#" class="menu__link">Обо мне</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Проекты</a></li>
+                <div class="menu__container"><button class="menu__button menu__button-close"
+                        id="list-button">&#9776;</button></div>
+                <ul class="menu__list menu__list-close" id="main-list">
+                    <li class="menu__item"><a href="#aboutMe" class="menu__link">Обо мне</a></li>
+                    <li class="menu__item"><a href="#projects" class="menu__link">Проекты</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">План развития</a></li>
                 </ul>
             </nav>
@@ -45,7 +46,7 @@
         </section>
         <div class="main__content">
             <section class="aboutMe">
-                <h2>Обо мне</h2>
+                <h2><a name="aboutMe">Обо мне</a></h2>
                 <p>Окончил среднюю школу (в Подмосковье) с золотой медалью. После 11 класса поступил в Московский
                     Финансово-Промышленный Университет на факультет Информационных систем (направление: разработка
                     интернет-приложений).</p>
@@ -92,26 +93,26 @@
             <p>Я полностью поддерживаю данную идею корпорации. За интернет-технологиями - великое будущее. Осознав
                 когда-то все это, я поставил
                 себе цель внести ценный вклад в развитие данной идеи.</p>
-            <h2>Мои проекты</h2>
-            <h3>1. Сайт о Марке Твене.</h3>
+            <h1><a name="projects">Мои проекты</a></h1>
+            <h2>1. Сайт о Марке Твене.</h2>
             <p><a href="https://ruslansedov.github.io/MarkTwain/index.html" target="_blank">Ссылка на сайт.</a></p>
-            <p><a href="https://github.com/RuslanSedov/MarkTwain"> Ссылка на GitHub рупозиторий.</a></p>
+            <p><a href="https://github.com/RuslanSedov/MarkTwain"> Ссылка на GitHub репозиторий.</a></p>
             <p>Этот сайт посвящен одному из величайших писателей в истории - знаменитому Марку Твену. Я создаю этот
                 сайт, так как считаю, что в российском сегменте интернета нет достойного и удобного сайта о жизни и
                 творчестве столь недооцененного писателя.</p>
             <p> При разработке использовал чистый HTML5, CSS и немного JavaScript. HTML написан согласно методологии
                 БЭМ. При создании адаптивности сайта я применил подход Mobile-first.</p>
-            <h3>2. КиноМонстр</h3>
+            <h2>2. КиноМонстр</h2>
             <p><a href="https://ruslansedov.github.io/KinoMonster/index.html" target="_blank">Ссылка на сайт</a></p>
             <p>Данный сайт создавался во время прохождения курса. За время написания данного сайта я подчерпнул
                 немало важного опыта. Идея сайта - портал о кино, где можно посмотреть трейлер кинофильма, почитать
                 рецензию и отзывы о нем.</p>
-            <h3>3. ToDo на Vue</h3>
+            <h2>3. ToDo на Vue</h2>
             <p><a href="https://ruslansedov.github.io/Vue.jsFirstApp/Todo/index_app.html">Ссылка на сайт</a></p>
             <p>Когда-то я попробывал изучать Vue.js - создал ToDo приложение с возможностью добавления, редактирования и
                 удаления задач. Позже же я начал изучать React - он показался мне более перспективным и удобным, нежели
                 Vue.</p>
-            <h3>4. Калькулятор</h3>
+            <h2>4. Калькулятор</h2>
             <p><a href="https://ruslansedov.github.io/Calc/index.html" target="_blank">Ссылка на сайт</a></p>
             <p>Простой калькулятор с адаптивным дизайном. Без лишних слов.</p>
             <p>Так же периодически выполняю задачи по JavaScript на CodeWars. <a
@@ -119,6 +120,10 @@
 
 
         </section>
+        <section class="">
+
+        </section>
+
     </main>
     <footer>
 

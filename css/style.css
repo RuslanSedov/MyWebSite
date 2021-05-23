@@ -71,7 +71,8 @@ body {
 
   /* padding: 0.675em 0.33em; */
 }
-.menu__item:hover {
+.menu__item:hover,
+.active {
   background-color: #d6ebff;
   color: rgb(86, 129, 222);
 }
@@ -83,6 +84,7 @@ body {
 
 .preview {
   background-color: #deefff;
+  /* background-color: #b8d1ff; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,24 +157,51 @@ body {
   .header {
     display: block;
   }
-  .menu__button {
+  .menu__container {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+  }
+  .menu__button {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
     background-color: white;
     border: none;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
+  }
+  .menu__button-open {
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+  .menu__button-close {
+    transform: rotate(0deg);
+    transition: 0.5s;
   }
   .menu__list {
-    height: max-content;
+    height: 150px;
     margin-top: -0.1em;
     padding-left: 0;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     background-color: white;
   }
+
+  .menu__list-close {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .menu__list-open {
+    opacity: 1;
+    transition: 0.5s;
+  }
+
   .main__content {
     padding: 1em 1.5em;
     flex-direction: column;
@@ -184,8 +213,5 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
-  .menu__list-hidden {
-    opacity: 0;
   }
 }

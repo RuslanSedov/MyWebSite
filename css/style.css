@@ -242,6 +242,9 @@ body {
   .myWay {
     padding: 1em 1.5em;
   }
+  .myWay__container p {
+    width: 50%;
+  }
   .contacts {
     display: flex;
     flex-direction: column;
